@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(52, 231, 238);
+}
+
 .head {
   text-align: center;
   margin: 75px 0 0 0;
@@ -34,4 +38,76 @@ button {
 
 .stop {
   display: none;
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    padding: 10px;
+  }
+
+  .head {
+    font-size: 30px;
+  }
+
+  .container {
+    width: auto;
+    padding: 60px 10px 25px;
+  }
+
+  .display {
+    font-size: 40px;
+  }
+
+  button {
+    padding: 7px 10px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  body {
+    padding: 7px;
+  }
+
+  .head {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 50px 7px 25px;
+  }
+
+  .display {
+    font-size: 30px;
+  }
+
+  button {
+    padding: 7px 10px;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .head {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 50px 2px 25px;
+  }
+
+  .display {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  body {
+    display: none;
+  }
 }
